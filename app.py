@@ -421,10 +421,6 @@ def render_sidebar() -> str:
 
         st.markdown("<br><br>", unsafe_allow_html=True)
         st.markdown("""
-        <div style="font-size:12px; color:rgba(255,255,255,0.35); text-align:center; line-height:1.8;">
-            Data: Pinhome Kec. Cidahu<br>
-            N = 46 listing rumah
-        </div>
         """, unsafe_allow_html=True)
 
     return halaman
