@@ -448,8 +448,6 @@ def show_home(model, meta: dict):
     with st.container():
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown('<p class="input-card-title">Spesifikasi Rumah</p>', unsafe_allow_html=True)
-        st.markdown('<p class="input-card-sub">Isi semua kolom di bawah ini</p>',
-                    unsafe_allow_html=True)
 
         # Baris 1: Luas Tanah & Luas Bangunan
         col1, col2 = st.columns(2, gap="medium")
