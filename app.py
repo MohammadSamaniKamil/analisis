@@ -542,25 +542,14 @@ def show_home(model, meta: dict):
         # ── Perbandingan dengan Pasar ──────
         _show_perbandingan(harga, meta)
 
-        # ── Ringkasan Input ───────────────
-        st.markdown("""
-        <div class="info-box">
-            <strong>📋 Ringkasan input:</strong><br>
-        """ + f"""
-            Luas tanah <strong>{lt} m²</strong> &nbsp;·&nbsp;
-            Luas bangunan <strong>{lb} m²</strong> &nbsp;·&nbsp;
-            Kamar tidur <strong>{int(kt)}</strong> &nbsp;·&nbsp;
-            Kamar mandi <strong>{int(km)}</strong>
-        </div>
-        """, unsafe_allow_html=True)
 
         # ── Disclaimer ────────────────────
         st.markdown("""
         <div class="disclaimer">
             ⚠️ <strong>Catatan Penting:</strong>
             Hasil estimasi merupakan perkiraan berdasarkan data harga penawaran rumah
-            di Kecamatan Cidahu dan tidak dapat dijadikan acuan tunggal dalam transaksi properti.
-            Harga aktual dapat berbeda tergantung kondisi fisik, lokasi spesifik, dan negosiasi.
+            di Kecamatan Cidahu, harga aktual dapat berbeda 
+            tergantung kondisi fisik, lokasi spesifik, dan negosiasi.
         </div>
         """, unsafe_allow_html=True)
 
@@ -713,12 +702,9 @@ def show_about():
     st.markdown("""
     <div class="disclaimer">
         ⚠️ <strong>Disclaimer:</strong>
-        Hasil estimasi merupakan perkiraan berdasarkan data penelitian dan
-        <strong>tidak dapat dijadikan acuan tunggal</strong> dalam transaksi properti.
+        Hasil estimasi merupakan perkiraan berdasarkan data penelitian dalam transaksi properti.
         Harga aktual dipengaruhi oleh kondisi fisik bangunan, lokasi spesifik,
         kondisi pasar, dan kesepakatan antara penjual dan pembeli.
-        Untuk keputusan properti yang signifikan, selalu konsultasikan dengan
-        agen properti atau penilai properti profesional.
     </div>
     """, unsafe_allow_html=True)
 
