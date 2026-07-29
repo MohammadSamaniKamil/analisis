@@ -446,7 +446,6 @@ def show_home(model, meta: dict):
 
     # ── Card Input ────────────────────────
     with st.container():
-        st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown('<p class="input-card-title">Spesifikasi Rumah</p>', unsafe_allow_html=True)
 
         # Baris 1: Luas Tanah & Luas Bangunan
