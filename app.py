@@ -640,19 +640,6 @@ def show_about():
     </div>
     """, unsafe_allow_html=True)
 
-    # ── Data yang digunakan ───────────────
-    st.markdown("""
-    <div class="about-section">
-        <p class="about-title">📂 Data yang Digunakan</p>
-        <p class="about-body">
-            Estimasi harga didasarkan pada data <strong>46 listing rumah</strong> yang dikumpulkan
-            dari platform properti Pinhome di wilayah Kecamatan Cidahu.
-            <br><br>
-            Data yang digunakan adalah <strong>harga penawaran</strong> pemilik atau agen properti,
-            bukan harga transaksi yang telah disepakati.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
 
     # ── Cara kerja ────────────────────────
     st.markdown("""
