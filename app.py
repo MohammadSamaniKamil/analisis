@@ -33,8 +33,8 @@ def inject_css():
         font-family: 'Inter', sans-serif;
     }
 
-    /* Sembunyikan header default Streamlit */
-    #MainMenu, footer, header { visibility: hidden; }
+    /* Sembunyikan menu dan footer default Streamlit, tapi biarkan header (tombol sidebar) */
+    #MainMenu, footer { visibility: hidden; }
 
     /* Background utama */
     .main { background-color: #F8F9FA; }
@@ -420,8 +420,6 @@ def render_sidebar() -> str:
         )
 
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.markdown("""
-        """, unsafe_allow_html=True)
 
     return halaman
 
