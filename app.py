@@ -530,9 +530,6 @@ def show_home(model, meta: dict):
         <div class="result-card">
             <p class="result-label">💰 Estimasi Harga Rumah</p>
             <p class="result-harga">{format_rupiah(harga)}</p>
-            <p class="result-range">
-                Perkiraan kisaran: {format_rupiah(bawah, singkat=True)} — {format_rupiah(atas, singkat=True)}
-            </p>
             {_badge_harga(harga, meta)}
         </div>
         """, unsafe_allow_html=True)
